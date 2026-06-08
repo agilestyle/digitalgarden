@@ -1,3 +1,488 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// ─── Elisava palette extensions ───────────────────────────────────────────────
+
+:root {
+  --orange: #E05535;
+  --yellow: #F2C840;
+  --tan:    #C4B89A;
+}
+
+[saved-theme="dark"] {
+  --tan: #7A6E5A;
+}
+
+// ─── Grid — columns ───────────────────────────────────────────────────────────
+
+#quartz-body {
+  column-gap: 2rem !important;
+}
+
+
+// ─── Root font scale (+30%) ───────────────────────────────────────────────────
+
+html {
+  font-size: 130%;
+}
+
+// ─── Body ─────────────────────────────────────────────────────────────────────
+
+body {
+  background-color: #fff;
+}
+
+// ─── Hide reader mode button ─────────────────────────────────────────────────
+
+.reader-mode { display: none !important; }
+
+// ─── Search — full sidebar width ─────────────────────────────────────────────
+
+.search {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+
+  > .search-button {
+    width: 100% !important;
+    background-color: #fff !important;
+  }
+}
+
+// ─── Sidebars ─────────────────────────────────────────────────────────────────
+
+.sidebar.left {
+  background-color: var(--lightgray);
+  border-right: none;
+  padding-right: 1.5rem !important;
+}
+
+.sidebar.right {
+  background-color: #fff;
+}
+
+@media not (max-width: 800px) {
+  .sidebar.left {
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+    padding-top: 2rem !important;
+  }
+  .sidebar.left .search {
+    margin-top: 2rem !important;
+  }
+  // Sticky footer: make the grid body fill the viewport and let center row grow
+  .page > #quartz-body {
+    min-height: 100vh !important;
+    grid-template-rows: auto 1fr auto !important;
+  }
+}
+
+// Tablet has 4 rows (sidebar-right stacks between center and footer)
+@media (min-width: 800px) and (max-width: 1200px) {
+  .page > #quartz-body {
+    grid-template-rows: auto 1fr auto auto !important;
+  }
+}
+
+// ─── Site title — logo + text label below ────────────────────────────────────
+
+.page-title {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  a {
+    display: block;
+    width: 160px;
+    height: 160px;
+    background-image: url('./static/logo.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-indent: -9999px;
+    overflow: hidden;
+    font-size: 0;
+    mix-blend-mode: multiply;
+  }
+
+  &::after {
+    content: "Digital Garden";
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dark);
+    text-align: center;
+  }
+}
+
+// ─── Hide h1 title on homepage — shown via sidebar label instead ──────────────
+
+[data-slug="index"] .article-title {
+  display: none;
+}
+
+// ─── Typography ───────────────────────────────────────────────────────────────
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--dark);
+  margin-top: 2.5rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--orange);
+}
+
+h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--gray);
+}
+
+p, li {
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+// ─── Links ────────────────────────────────────────────────────────────────────
+
+a:not(.internal):not(.tag-link) {
+  color: var(--orange);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--orange) 30%, transparent);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  font-weight: inherit;
+
+  &:hover {
+    text-decoration-color: var(--orange);
+  }
+}
+
+a.internal {
+  background-color: color-mix(in srgb, var(--yellow) 30%, transparent);
+  color: var(--dark) !important;
+  border-radius: 3px;
+  padding: 0.05rem 0.3rem;
+  font-weight: 500;
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--yellow) 55%, transparent);
+  }
+}
+
+// ─── Blockquotes — orange left accent ────────────────────────────────────────
+
+blockquote {
+  border-left: 4px solid var(--orange);
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin: 1.75rem 0;
+  background-color: color-mix(in srgb, var(--orange) 5%, transparent);
+  color: var(--darkgray);
+
+  p { margin: 0; }
+}
+
+// ─── Horizontal rule ─────────────────────────────────────────────────────────
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--lightgray);
+  margin: 2.5rem 0;
+}
+
+// ─── Tags ─────────────────────────────────────────────────────────────────────
+
+a.tag-link {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  background-color: color-mix(in srgb, var(--yellow) 35%, transparent);
+  color: var(--dark) !important;
+  text-decoration: none !important;
+  transition: background-color 0.15s ease;
+
+  &::before { content: none; }
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--yellow) 65%, transparent);
+  }
+}
+
+// ─── Explorer — always expanded on desktop, hamburger drawer on mobile ────────
+
+@media not (max-width: 800px) {
+  .explorer,
+  .explorer.collapsed {
+    flex: 0 1 auto !important;
+    overflow-y: auto !important;
+  }
+
+  .explorer .fold { display: none; }
+
+  button.desktop-explorer {
+    pointer-events: none;
+    cursor: default;
+
+    h2 {
+      font-size: 0.7rem !important;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gray) !important;
+    }
+  }
+}
+
+.explorer-content {
+  font-size: 0.9rem;
+
+  ul li > a {
+    font-weight: 500;
+    transition: color 0.15s ease;
+
+    &:hover { color: var(--orange) !important; }
+    &.active { color: var(--orange) !important; }
+  }
+}
+
+// ─── Backlinks & ToC ─────────────────────────────────────────────────────────
+
+.backlinks,
+.toc {
+  background-color: color-mix(in srgb, var(--yellow) 12%, transparent);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+
+  h3 {
+    font-size: 0.7rem !important;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray) !important;
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+// ─── Content meta ─────────────────────────────────────────────────────────────
+
+.content-meta {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+// ─── Footer ──────────────────────────────────────────────────────────────────
+
+footer {
+  font-size: 0.65rem !important;
+  border-top: 1px solid var(--lightgray);
+  padding-top: 0.75rem;
+  margin-top: 1.5rem;
+
+  p, li, span { font-size: 0.65rem !important; }
+
+  a {
+    color: var(--darkgray) !important;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover { color: var(--orange) !important; }
+  }
+}
+
+// ─── Callouts ─────────────────────────────────────────────────────────────────
+
+.callout {
+  border-radius: 3px;
+}
+
+// ─── Elisava-style color tiles ────────────────────────────────────────────────
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 2.5rem 0;
+
+  @media #{$mobile} {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tile {
+  padding: 1.5rem !important;
+  min-height: 360px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  text-decoration: none !important;
+  border-radius: 0 !important;
+  background-image: none !important;
+  cursor: pointer;
+  position: relative !important;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #111;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'/%3E%3Cpolyline points='7 7 17 7 17 17'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'/%3E%3Cpolyline points='7 7 17 7 17 17'/%3E%3C/svg%3E");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+
+  &:hover::after { opacity: 1; }
+
+  &.orange { background-color: var(--orange) !important; &:hover { background-color: var(--orange) !important; } }
+  &.yellow { background-color: var(--yellow) !important; &:hover { background-color: var(--yellow) !important; } }
+  &.tan    { background-color: var(--tan) !important;    &:hover { background-color: var(--tan) !important; } }
+
+  p, a, span { color: #111 !important; text-decoration: none; }
+  &:hover { color: #111 !important; }
+
+  &.yellow a.internal {
+    background-color: color-mix(in srgb, var(--orange) 25%, transparent) !important;
+    &:hover { background-color: color-mix(in srgb, var(--orange) 50%, transparent) !important; }
+  }
+
+  .tile-title {
+    font-family: var(--headerFont);
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    color: #111;
+    margin: 0;
+  }
+
+  .tile-body {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: #111;
+    margin: 0;
+  }
+}
+
+// ─── Mobile ───────────────────────────────────────────────────────────────────
+
+@media #{$mobile} {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.2rem; }
+  .tiles { grid-template-columns: 1fr; }
+  .tile { min-height: 200px; }
+
+  .sidebar.left {
+    border-right: none;
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    align-items: center !important;
+  }
+
+  .sidebar.right { border-left: none; display: none; }
+
+  .page-header {
+    margin-top: 2rem !important;
+  }
+
+  // Compact logo in the horizontal mobile header strip
+  .page-title {
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0.5rem;
+
+    a {
+      width: 80px !important;
+      height: 80px !important;
+    }
+
+    &::after {
+      display: none !important;
+    }
+  }
+
+  // Search fills remaining space between logo and hamburger
+  .search {
+    max-width: 100% !important;
+    flex-grow: 1 !important;
+  }
+
+  // Move hamburger to top right (Quartz sets order:-1 which puts it first)
+  .explorer {
+    order: 2 !important;
+    align-self: center !important;
+    margin-left: 0.5rem;
+    position: relative !important;
+  }
+
+  // Compact dropdown from top-right instead of full-screen left-slide
+  .explorer .explorer-content {
+    position: fixed !important;
+    top: 4.5rem !important;
+    right: 1rem !important;
+    left: auto !important;
+    width: auto !important;
+    min-width: 180px !important;
+    height: auto !important;
+    max-height: 60vh !important;
+    overflow-y: auto !important;
+    background: var(--light) !important;
+    border: 1px solid var(--lightgray) !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12) !important;
+    padding: 0.75rem 1rem !important;
+    transform: translateY(-0.5rem) scale(0.97) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: transform 0.15s ease, opacity 0.15s ease, visibility 0.15s !important;
+    z-index: 200 !important;
+  }
+
+  .explorer.open > .explorer-content {
+    transform: translateY(0) scale(1) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  // Content stays in place when dropdown is open
+  .page>#quartz-body.lock-scroll>:not(.sidebar.left:has(.explorer)) {
+    transform: none !important;
+  }
+}
