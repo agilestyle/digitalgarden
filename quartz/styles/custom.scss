@@ -125,6 +125,21 @@ body {
   display: none;
 }
 
+// ─── Section page tile headers ────────────────────────────────────────────────
+
+[data-slug="notes/index"] h1.article-title,
+[data-slug="questions/index"] h1.article-title,
+[data-slug="cross-pollination/index"] h1.article-title {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  color: #111 !important;
+  margin-bottom: 0;
+}
+
+[data-slug="notes/index"] h1.article-title             { background-color: var(--orange); }
+[data-slug="questions/index"] h1.article-title         { background-color: var(--yellow); }
+[data-slug="cross-pollination/index"] h1.article-title { background-color: var(--tan); }
+
 // ─── Typography ───────────────────────────────────────────────────────────────
 
 h1 {
@@ -202,6 +217,19 @@ blockquote {
   p { margin: 0; }
 }
 
+// ─── Related links (paragraph after hr) ──────────────────────────────────────
+
+hr + p {
+  font-size: 0.78rem !important;
+  color: var(--gray);
+
+  em { font-size: 0.78rem !important; }
+
+  a.internal {
+    font-size: 0.78rem !important;
+  }
+}
+
 // ─── Horizontal rule ─────────────────────────────────────────────────────────
 
 hr {
@@ -215,21 +243,64 @@ hr {
 
 a.tag-link {
   display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 0.62rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 0.2rem 0.6rem;
+  padding: 0.08rem 0.3rem;
   border-radius: 2px;
-  background-color: color-mix(in srgb, var(--yellow) 35%, transparent);
-  color: var(--dark) !important;
+  background-color: var(--lightgray);
+  color: var(--gray) !important;
   text-decoration: none !important;
-  transition: background-color 0.15s ease;
+  transition: background-color 0.15s ease, color 0.15s ease;
 
   &::before { content: none; }
 
   &:hover {
-    background-color: color-mix(in srgb, var(--yellow) 65%, transparent);
+    background-color: var(--gray);
+    color: var(--light) !important;
+  }
+}
+
+// note-properties: strip box, hide header and key label, full-width tags
+.note-properties {
+  border: none !important;
+  border-radius: 0 !important;
+  margin: 0 0 0.75rem !important;
+
+  .note-properties-header { display: none !important; }
+  .note-properties-key    { display: none !important; }
+
+  .note-properties-table,
+  .note-properties-row,
+  .note-properties-value {
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+    word-break: normal;
+    overflow: visible;
+  }
+
+  .note-properties-tags {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.3rem;
+
+    .tag-link {
+      white-space: nowrap !important;
+      font-size: 0.62rem !important;
+      line-height: 1 !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.05em !important;
+      text-transform: uppercase !important;
+      padding: 0.08rem 0.3rem !important;
+      background-color: var(--lightgray) !important;
+      color: var(--gray) !important;
+    }
   }
 }
 
@@ -245,28 +316,61 @@ a.tag-link {
   .explorer .fold { display: none; }
 
   button.desktop-explorer {
-    pointer-events: none;
-    cursor: default;
-
-    h2 {
-      font-size: 0.7rem !important;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--gray) !important;
-    }
+    display: none;
   }
 }
 
 .explorer-content {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 
-  ul li > a {
-    font-weight: 500;
+  // Folder section headers ("Notes", "Questions", etc.)
+  .folder-container {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.9rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .folder-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+    flex: 1;
+  }
+
+  .folder-title {
+    font-size: 0.68rem !important;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dark) !important;
+  }
+
+  // Children indented with a left rule
+  .folder-outer > ul.content {
+    border-left: 2px solid var(--lightgray);
+    margin-left: 0.25rem;
+    padding-left: 0.6rem;
+  }
+
+  // Individual note links
+  .nav-file-title {
+    font-size: 0.82rem !important;
+    font-weight: 400;
+    line-height: 1.35;
+    color: var(--darkgray) !important;
+    padding: 0.18rem 0;
+    display: block;
     transition: color 0.15s ease;
 
     &:hover { color: var(--orange) !important; }
-    &.active { color: var(--orange) !important; }
+    &.active {
+      color: var(--orange) !important;
+      font-weight: 600;
+    }
   }
 }
 
@@ -284,8 +388,103 @@ a.tag-link {
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--gray) !important;
+    color: var(--dark) !important;
     margin: 0 0 0.5rem 0;
+  }
+}
+
+.backlinks ul,
+.toc ul, .toc ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0;
+    margin: 0 0 0.35rem;
+  }
+
+  a {
+    font-size: 0.82rem !important;
+    font-weight: 400;
+    line-height: 1.35;
+    padding: 0.18rem 0;
+    display: block;
+    color: var(--dark) !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    text-decoration: none !important;
+
+    &:hover {
+      background-color: color-mix(in srgb, var(--yellow) 55%, transparent) !important;
+    }
+  }
+}
+
+// ─── Popover previews ────────────────────────────────────────────────────────
+
+.popover > .popover-inner {
+  width: 18rem;
+  max-height: 16rem;
+  font-size: 0.7rem !important;
+  padding: 0 0.6rem 0.6rem;
+
+  h1 {
+    font-size: 0.85rem !important;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-transform: none;
+    background-color: transparent;
+    color: var(--dark) !important;
+    padding: 0;
+    border-radius: 0;
+    margin: 0.6rem 0 0.4rem;
+  }
+
+  a:not(.tag-link), a.internal-link:not(.tag-link) {
+    background-color: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    color: var(--dark) !important;
+    font-size: 0.7rem !important;
+    text-decoration: none !important;
+  }
+
+  a.tag-link {
+    display: inline-block !important;
+    white-space: nowrap !important;
+    font-size: 0.62rem !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    padding: 0.08rem 0.3rem !important;
+    border-radius: 2px !important;
+    background-color: var(--lightgray) !important;
+    color: var(--gray) !important;
+    text-decoration: none !important;
+    margin-bottom: 0.2rem !important;
+  }
+
+  .note-properties-tags {
+    line-height: 1 !important;
+    gap: 0.2rem !important;
+  }
+
+  p, li, span { font-size: 0.7rem !important; }
+  h2, h3 { font-size: 0.78rem !important; }
+}
+
+// ─── Breadcrumbs ──────────────────────────────────────────────────────────────
+
+.breadcrumb-container {
+  font-size: 0.82rem !important;
+
+  a, span { font-size: 0.82rem !important; }
+
+  .breadcrumb-element p {
+    font-size: 0.6rem !important;
+    opacity: 0.4;
   }
 }
 
@@ -315,6 +514,41 @@ footer {
     font-weight: 600;
 
     &:hover { color: var(--orange) !important; }
+  }
+}
+
+// ─── Tag/folder list pages ────────────────────────────────────────────────────
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 1rem;
+
+  .meta { flex: 0 0 auto; }
+
+  .desc {
+    flex: 1 1 auto;
+    h3 { margin: 0; }
+  }
+
+  > .tags {
+    flex: 0 0 100%;
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25rem;
+    list-style: none !important;
+    margin: 0 0 0.5rem 0 !important;
+    padding: 0 !important;
+
+    li {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+
+      &::before, &::marker { display: none !important; content: none !important; }
+    }
   }
 }
 
