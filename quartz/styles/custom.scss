@@ -357,8 +357,9 @@ a.internal.tag-link {
       letter-spacing: 0.05em;
       text-transform: uppercase;
       padding: 0.08rem 0.3rem;
-      background-color: var(--lightgray);
-      color: var(--gray);
+      border-radius: 2px;
+      background-color: #d4d4d4;
+      color: var(--darkgray);
     }
   }
 }
@@ -719,8 +720,7 @@ footer {
     width: 1.25rem;
     height: 1.25rem;
     background-color: #111;
-    opacity: 0;
-    transition: opacity 0.15s ease;
+    opacity: 1;
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'/%3E%3Cpolyline points='7 7 17 7 17 17'/%3E%3C/svg%3E");
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='7' y1='17' x2='17' y2='7'/%3E%3Cpolyline points='7 7 17 7 17 17'/%3E%3C/svg%3E");
     -webkit-mask-size: contain;
