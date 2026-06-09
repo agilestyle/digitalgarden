@@ -48,10 +48,14 @@ body {
   }
 }
 
-// When search is open, release the sidebar's stacking context so the fixed
-// search overlay can properly cover and blur the full viewport.
-body:has(.search-container.active) .sidebar.left {
-  z-index: auto !important;
+// The search container's backdrop-filter blurs center/right content fine, but the sidebar
+// elements (.page-title, .explorer) sit outside its blur reach due to grid stacking.
+// Fix: directly blur those two elements when search is active.
+body:has(.search-container.active) .sidebar.left .page-title,
+body:has(.search-container.active) .sidebar.left .explorer {
+  filter: blur(4px);
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 // ─── Sidebars ─────────────────────────────────────────────────────────────────
@@ -124,7 +128,7 @@ body:has(.search-container.active) .sidebar.left {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.35rem;
     text-decoration: none !important;
     color: inherit;
 
@@ -138,10 +142,7 @@ body:has(.search-container.active) .sidebar.left {
     display: block;
     width: 130px;
     height: 130px;
-    background-image: url('./static/logo.webp');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    object-fit: contain;
     mix-blend-mode: multiply;
   }
 
@@ -174,7 +175,7 @@ body:has(.search-container.active) .sidebar.left {
 
 @media (min-width: 1200px) {
   .page-title-text {
-    margin-top: 5%;
+    margin-top: 4%;
   }
 }
 
