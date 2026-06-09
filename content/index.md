@@ -1,5 +1,5 @@
 ---
-title: Digital Garden
+title: Diana's Garden
 ---
 
 A living space for ideas germinating during the [Master in Design for Responsible AI](https://www.elisava.net/en/masters/master-design-responsible-artificial-intelligence/) at Elisava.
