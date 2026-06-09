@@ -13,10 +13,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   const baseDir = pathToRoot(fileData.slug as string);
   return (
     <h2 class={classNames(displayClass, "page-title")}>
-      <a href={baseDir}>
-        <img class="page-title-logo" src={`${baseDir}/static/logo.webp`} aria-hidden="true" alt="" />
-        <span class="page-title-text">{title}</span>
-      </a>
+      <a href={baseDir}>{title}</a>
     </h2>
   );
 };

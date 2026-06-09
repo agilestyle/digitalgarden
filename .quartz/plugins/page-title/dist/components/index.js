@@ -52,7 +52,7 @@ var PageTitle = ({ fileData, cfg, displayClass }) => {
   const locale = cfg?.locale ?? "en-US";
   const title = cfg?.pageTitle ?? i18n(locale).propertyDefaults.title;
   const baseDir = pathToRoot(fileData.slug);
-  return /* @__PURE__ */ u2("h2", { class: classNames(displayClass, "page-title"), children: /* @__PURE__ */ u2("a", { href: baseDir, children: [/* @__PURE__ */ u2("img", { class: "page-title-logo", src: `${baseDir}/static/logo.webp`, "aria-hidden": "true", alt: "" }), /* @__PURE__ */ u2("span", { class: "page-title-text", children: title })] }) });
+  return /* @__PURE__ */ u2("h2", { class: classNames(displayClass, "page-title"), children: /* @__PURE__ */ u2("a", { href: baseDir, children: title }) });
 };
 PageTitle.css = `
 .page-title {
