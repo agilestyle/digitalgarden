@@ -45,6 +45,33 @@ npx quartz build --serve  # Build and serve with live reload
 
 ---
 
+## Production build (preview before deploying)
+
+The dev server (`./server.sh start`) builds from local files directly and does **not** replicate the production deploy. The GitHub Actions workflow runs two extra steps before building:
+
+1. `npx quartz plugin install` — re-downloads all plugins from their locked versions, overwriting any local edits to `.quartz/plugins/`
+2. `npx quartz build` — builds from the freshly installed plugins
+
+To replicate this exactly on your machine:
+
+```sh
+./server.sh stop   # stop the dev server first (if running)
+./server.sh prod   # reinstall plugins + serve with the production base path
+```
+
+Then open **http://localhost:8080/digitalgarden** — this mirrors what gets deployed to `agilestyle.github.io/digitalgarden`.
+
+> **Why this differs from `./server.sh start`:** `prod` re-runs `npx quartz plugin install`, which overwrites `.quartz/plugins/` with the versions locked in `quartz.lock.json` — exactly as CI does. It also serves with `--baseDir /digitalgarden` so relative asset paths (CSS, images) resolve the same way as on GitHub Pages.
+
+When done, switch back to the normal dev server:
+
+```sh
+./server.sh stop
+./server.sh start
+```
+
+---
+
 ## Content structure
 
 ```

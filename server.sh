@@ -3,6 +3,8 @@
 PORT=8080
 PID_FILE=".server.pid"
 
+BASE_DIR="/digitalgarden"
+
 start() {
   if [ -f "$PID_FILE" ] && kill -0 "$(cat $PID_FILE)" 2>/dev/null; then
     echo "Server already running (PID $(cat $PID_FILE)) at http://localhost:$PORT"
@@ -25,11 +27,32 @@ stop() {
   fi
 }
 
+prod() {
+  if [ -f "$PID_FILE" ] && kill -0 "$(cat $PID_FILE)" 2>/dev/null; then
+    echo "A server is already running (PID $(cat $PID_FILE)). Run ./server.sh stop first."
+    exit 1
+  fi
+  echo "→ Re-installing plugins (mirrors CI step) ..."
+  npx quartz plugin install
+  echo "→ Starting production-replica server at http://localhost:$PORT$BASE_DIR ..."
+  npx quartz build --serve --port $PORT --baseDir $BASE_DIR &
+  echo $! > "$PID_FILE"
+  echo "Server started (PID $!) — stop with: ./server.sh stop"
+  echo "Open: http://localhost:$PORT$BASE_DIR"
+}
+
 case "$1" in
-  start) start ;;
-  stop)  stop  ;;
+  start)   start ;;
+  stop)    stop  ;;
   restart) stop; sleep 1; start ;;
+  prod)    prod  ;;
   *)
-    echo "Usage: ./server.sh [start|stop|restart]"
+    echo "Usage: ./server.sh [start|stop|restart|prod]"
+    echo ""
+    echo "  start    — dev server with live reload (http://localhost:$PORT)"
+    echo "  stop     — stop whichever server is running"
+    echo "  restart  — stop + start"
+    echo "  prod     — reinstall plugins + serve with production base path"
+    echo "             (http://localhost:$PORT$BASE_DIR) — mirrors the CI deploy"
     ;;
 esac
