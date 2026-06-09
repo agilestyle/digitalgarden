@@ -48,6 +48,12 @@ body {
   }
 }
 
+// When search is open, release the sidebar's stacking context so the fixed
+// search overlay can properly cover and blur the full viewport.
+body:has(.search-container.active) .sidebar.left {
+  z-index: auto !important;
+}
+
 // ─── Sidebars ─────────────────────────────────────────────────────────────────
 
 .sidebar.left {
@@ -115,6 +121,20 @@ body {
   gap: 0.5rem;
 
   a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none !important;
+    color: inherit;
+
+    &:hover {
+      text-decoration: none !important;
+      color: inherit;
+    }
+  }
+
+  .page-title-logo {
     display: block;
     width: 130px;
     height: 130px;
@@ -122,14 +142,10 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    text-indent: -9999px;
-    overflow: hidden;
-    font-size: 0;
     mix-blend-mode: multiply;
   }
 
-  &::after {
-    content: "Diana's Garden";
+  .page-title-text {
     display: block;
     font-size: 0.8rem;
     font-weight: 300;
@@ -139,6 +155,29 @@ body {
     text-align: center;
   }
 }
+
+@media (max-width: 800px) {
+  .page-title a {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .page-title .page-title-logo {
+    width: 15vw;
+    height: 15vw;
+    flex-shrink: 0;
+  }
+  .page-title .page-title-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-title-text {
+    margin-top: 5%;
+  }
+}
+
 
 // ─── Hide h1 title on homepage — shown via sidebar label instead ──────────────
 
@@ -273,8 +312,8 @@ a.internal.tag-link {
   text-transform: uppercase;
   padding: 0.08rem 0.3rem;
   border-radius: 2px;
-  background-color: var(--lightgray);
-  color: var(--gray);
+  background-color: #d4d4d4;
+  color: var(--darkgray);
   text-decoration: none;
   transition: background-color 0.15s ease, color 0.15s ease;
 
@@ -361,14 +400,20 @@ a.internal.tag-link {
     cursor: pointer;
     text-align: left;
     flex: 1;
+    text-decoration: none !important;
+
+    &:hover {
+      text-decoration: none !important;
+    }
   }
 
   .folder-title {
-    font-size: 0.68rem;
+    font-size: 0.884rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--dark);
+    text-decoration: none !important;
   }
 
   // Children indented with a left rule
@@ -383,12 +428,18 @@ a.internal.tag-link {
     font-size: 0.82rem;
     font-weight: 400;
     line-height: 1.35;
-    color: var(--darkgray);
-    padding: 0.18rem 0;
-    display: block;
-    transition: color 0.15s ease;
+    color: #111 !important;
+    text-decoration: none !important;
+    padding: 0.18rem 0.4rem;
+    display: inline-block;
+    border-radius: 3px;
+    transition: background-color 0.15s ease, color 0.15s ease;
 
-    &:hover { color: var(--orange); }
+    &:hover {
+      color: #111 !important;
+      text-decoration: none !important;
+      background-color: color-mix(in srgb, var(--yellow) 55%, transparent);
+    }
     &.active {
       color: var(--orange);
       font-weight: 600;
