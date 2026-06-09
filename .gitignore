@@ -1,4 +1,5 @@
 .DS_Store
+.server.pid
 .gitignore
 node_modules
 public
