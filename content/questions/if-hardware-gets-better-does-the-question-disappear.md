@@ -17,4 +17,4 @@ I don't know. But I think it matters whether we're building awareness tools for 
 
 ---
 
-*Related: [[the-cost-of-ai]] · [[low-tech-in-an-ai-world]] · [[what-does-design-actually-change]]*
+*Related: [[the-cost-of-ai]] · [[low-tech-in-an-ai-world]] · [[what-does-design-actually-change]] · [[anemo-ia-the-idea]] · [[anemo-ia-building-in-phases]] · [[anemo-ia-measuring-carbon]] · [[two-papers-three-formulas]]*

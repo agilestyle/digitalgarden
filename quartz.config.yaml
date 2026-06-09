@@ -194,7 +194,11 @@ plugins:
         GitHub: https://github.com/agilestyle/digitalgarden
         MDRAI: https://www.elisava.net/en/masters/master-design-responsible-artificial-intelligence/
   - source: github:quartz-community/recent-notes
-    enabled: false
+    enabled: true
+    layout:
+      position: right
+      priority: 20
+      condition: index
   - source: github:quartz-community/spacer
     enabled: true
     options: {}

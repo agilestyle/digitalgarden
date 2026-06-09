@@ -22,4 +22,4 @@ The project is a small, pragmatic step toward it. Not an argument that AI is bad
 
 ---
 
-*Related: [[the-cost-of-ai]] · [[from-principles-to-doing]] · [[responsible-for-whom]] · [[anemo-ia-building-in-phases]] · [[anemo-ia-measuring-carbon]]*
+*Related: [[the-cost-of-ai]] · [[from-principles-to-doing]] · [[responsible-for-whom]] · [[anemo-ia-building-in-phases]] · [[anemo-ia-measuring-carbon]] · [[two-papers-three-formulas]] · [[if-hardware-gets-better-does-the-question-disappear]]*

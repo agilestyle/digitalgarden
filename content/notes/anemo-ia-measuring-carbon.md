@@ -50,4 +50,4 @@ All estimates are labelled `~estimated` in the interface. Every CSV export inclu
 
 ---
 
-*Related: [[anemo-ia-the-idea]] · [[anemo-ia-building-in-phases]] · [[the-cost-of-ai]] · [[ai-and-the-green-web]] · [[can-transparency-be-enough]]*
+*Related: [[anemo-ia-the-idea]] · [[anemo-ia-building-in-phases]] · [[the-cost-of-ai]] · [[ai-and-the-green-web]] · [[can-transparency-be-enough]] · [[two-papers-three-formulas]] · [[if-hardware-gets-better-does-the-question-disappear]]*

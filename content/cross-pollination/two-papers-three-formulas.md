@@ -25,4 +25,4 @@ The three-path design is honest about this. Every estimate in AnemoIA is labelle
 
 ---
 
-*Related: [[the-cost-of-ai]] · [[ai-and-the-green-web]] · [[if-hardware-gets-better-does-the-question-disappear]]*
+*Related: [[the-cost-of-ai]] · [[ai-and-the-green-web]] · [[if-hardware-gets-better-does-the-question-disappear]] · [[anemo-ia-the-idea]] · [[anemo-ia-building-in-phases]] · [[anemo-ia-measuring-carbon]]*

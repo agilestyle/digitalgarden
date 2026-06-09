@@ -27,4 +27,4 @@ There's something worth sitting with here: a project about responsible AI use wa
 
 ---
 
-*Related: [[anemo-ia-the-idea]] · [[anemo-ia-measuring-carbon]] · [[what-does-design-actually-change]] · [[from-principles-to-doing]]*
+*Related: [[anemo-ia-the-idea]] · [[anemo-ia-measuring-carbon]] · [[what-does-design-actually-change]] · [[from-principles-to-doing]] · [[two-papers-three-formulas]] · [[if-hardware-gets-better-does-the-question-disappear]]*
