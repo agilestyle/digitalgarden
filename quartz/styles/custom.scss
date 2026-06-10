@@ -715,6 +715,13 @@ footer {
       &::before, &::marker { display: none; content: none; }
     }
   }
+
+  @media #{$mobile} {
+    grid-template-columns: 1fr;
+    grid-template-areas: "meta" "desc" "tags";
+    column-gap: 0;
+    row-gap: 0.2rem;
+  }
 }
 
 // ─── Callouts ─────────────────────────────────────────────────────────────────
