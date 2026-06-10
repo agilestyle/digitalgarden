@@ -189,11 +189,7 @@ plugins:
       position: afterBody
       priority: 10
   - source: github:quartz-community/footer
-    enabled: true
-    options:
-      links:
-        GitHub: https://github.com/agilestyle/digitalgarden
-        MDRAI: https://www.elisava.net/en/masters/master-design-responsible-artificial-intelligence/
+    enabled: false
   - source: github:quartz-community/recent-notes
     enabled: true
     options:
