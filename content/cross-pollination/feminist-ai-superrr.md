@@ -1,5 +1,6 @@
 ---
 title: Feminist AI — what Superrr Lab opened up
+date: 2026-02-09
 tags: [feminist-ai, nushin-yazdani, superrr, governance, cross-pollination]
 ---
 

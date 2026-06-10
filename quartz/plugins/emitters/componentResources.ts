@@ -258,6 +258,17 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     `)
   }
 
+  componentResources.afterDOMLoaded.push(`
+    function openExternalLinksInNewTab() {
+      document.querySelectorAll('a[href^="http"]').forEach(link => {
+        link.setAttribute('target', '_blank')
+        link.setAttribute('rel', 'noopener noreferrer')
+      })
+    }
+    openExternalLinksInNewTab()
+    document.addEventListener('nav', openExternalLinksInNewTab)
+  `)
+
   if (cfg.enableSPA) {
     componentResources.afterDOMLoaded.push(spaRouterScript)
   } else {

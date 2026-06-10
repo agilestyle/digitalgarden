@@ -1,5 +1,6 @@
 ---
 title: The cost of AI
+date: 2025-11-26
 tags: [environment, sustainability, term-1, planetary, ai-systems]
 ---
 

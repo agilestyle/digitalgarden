@@ -1,5 +1,6 @@
 ---
 title: Two papers, three formulas
+date: 2026-05-06
 tags: [environment, AI, carbon, ecologits, TPU, hardware, anemo-ia, cross-pollination]
 ---
 

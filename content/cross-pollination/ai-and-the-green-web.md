@@ -1,5 +1,6 @@
 ---
 title: AI and the green web
+date: 2025-12-04
 tags: [environment, green-web, michelle-thorne, infrastructure, cross-pollination]
 ---
 

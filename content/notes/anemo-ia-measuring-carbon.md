@@ -1,5 +1,6 @@
 ---
 title: AnemoIA — from EcoLogits to our own estimator
+date: 2026-05-08
 tags: [anemo-ia, final-project, carbon, ecologits, environmental-impact, term-3]
 ---
 

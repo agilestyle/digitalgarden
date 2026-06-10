@@ -1,5 +1,6 @@
 ---
 title: What does design actually change?
+date: 2026-06-03
 tags: [design, agency, systems, open-question, practice]
 ---
 

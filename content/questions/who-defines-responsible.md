@@ -1,5 +1,6 @@
 ---
 title: Who gets to define "responsible"?
+date: 2026-01-29
 tags: [responsible-ai, power, governance, open-question, politics]
 ---
 

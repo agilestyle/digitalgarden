@@ -1,5 +1,6 @@
 ---
 title: Can transparency be enough?
+date: 2026-03-11
 tags: [transparency, explainability, governance, open-question]
 ---
 

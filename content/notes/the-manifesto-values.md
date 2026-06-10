@@ -1,5 +1,6 @@
 ---
 title: The manifesto values
+date: 2025-10-02
 tags: [values, design, everything-manifesto, ethics, practice]
 ---
 

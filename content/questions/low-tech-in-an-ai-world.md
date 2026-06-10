@@ -1,5 +1,6 @@
 ---
 title: What does low-tech mean now?
+date: 2026-03-19
 tags: [low-tech, media-lab, sustainability, open-question, practice]
 ---
 

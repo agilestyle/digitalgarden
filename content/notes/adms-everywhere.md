@@ -1,5 +1,6 @@
 ---
 title: ADMS everywhere
+date: 2025-11-12
 tags: [adms, automation, term-1, decoding-ai, governance]
 ---
 

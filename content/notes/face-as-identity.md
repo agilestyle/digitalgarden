@@ -1,6 +1,7 @@
 ---
 title: A face isn't just data
-tags: [surveillance, identity, futures, pluriversal, term-3]
+date: 2026-02-17
+tags: [surveillance, identity, futures, pluriversal, clearview, term-3]
 ---
 
 

@@ -1,5 +1,6 @@
 ---
 title: New media and AI imagination
+date: 2025-11-19
 tags: [new-media, eryk-salvaggio, imagination, representation, cross-pollination]
 ---
 

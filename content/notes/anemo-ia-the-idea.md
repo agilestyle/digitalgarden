@@ -1,5 +1,6 @@
 ---
 title: AnemoIA — where the idea came from
+date: 2026-04-08
 tags: [anemo-ia, final-project, responsible-ai, term-3, anemoia]
 ---
 

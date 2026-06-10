@@ -1,5 +1,6 @@
 ---
 title: If the hardware gets better, does the question disappear?
+date: 2026-05-04
 tags: [hardware, efficiency, rebound-effect, responsibility, open-question]
 ---
 
