@@ -17,4 +17,4 @@ So the question I'm sitting with: is there a version of low-tech that's genuinel
 
 ---
 
-*Related: [[the-cost-of-ai]] · [[ai-and-the-green-web]] · [[the-manifesto-values]]*
+*Related: [[the-cost-of-ai|The cost of AI]] · [[ai-and-the-green-web|AI and the green web]] · [[the-manifesto-values|The manifesto values]]*

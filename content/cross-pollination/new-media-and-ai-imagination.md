@@ -17,4 +17,4 @@ What I'm taking into my practice: the way I communicate about AI systems is itse
 
 ---
 
-*Related: [[what-is-intelligence-anyway]] · [[adms-everywhere]] · [[the-manifesto-values]]*
+*Related: [[what-is-intelligence-anyway|What is intelligence, anyway?]] · [[adms-everywhere|ADMS everywhere]] · [[the-manifesto-values|The manifesto values]]*

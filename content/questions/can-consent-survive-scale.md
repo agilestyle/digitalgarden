@@ -22,4 +22,4 @@ I don't know which of these is right, or whether any of them is enforceable at t
 
 ---
 
-*Related: [[clearview-ai]] · [[face-as-identity]] · [[who-defines-responsible]] · [[adms-everywhere]]*
+*Related: [[clearview-ai|Clearview AI]] · [[face-as-identity|A face isn't just data]] · [[who-defines-responsible|Who gets to define "responsible"?]] · [[adms-everywhere|ADMS everywhere]]*

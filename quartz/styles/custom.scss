@@ -188,15 +188,10 @@ body:has(.search-container.active) .sidebar.left .explorer {
 [data-slug="notes/index"] h1.article-title,
 [data-slug="questions/index"] h1.article-title,
 [data-slug="cross-pollination/index"] h1.article-title {
-  display: inline-block;
-  padding: 0.3rem 0.75rem;
-  color: #111;
-  margin-bottom: 0;
+  display: block;
+  padding: 0;
+  background-color: transparent;
 }
-
-[data-slug="notes/index"] h1.article-title             { background-color: var(--orange); }
-[data-slug="questions/index"] h1.article-title         { background-color: var(--yellow); }
-[data-slug="cross-pollination/index"] h1.article-title { background-color: var(--tan); }
 
 // ─── Typography ───────────────────────────────────────────────────────────────
 
@@ -608,9 +603,44 @@ a.internal.tag-link {
     cursor: default;
     text-decoration: none;
   }
+
+  a[href$="/notes"], a[href$="/notes/"] {
+    background-color: var(--orange);
+    color: #111 !important;
+    padding: 0.1rem 0.45rem;
+    border-radius: 2px;
+    text-decoration: none !important;
+  }
+
+  a[href$="/questions"], a[href$="/questions/"] {
+    background-color: var(--yellow);
+    color: #111 !important;
+    padding: 0.1rem 0.45rem;
+    border-radius: 2px;
+    text-decoration: none !important;
+  }
+
+  a[href$="/cross-pollination"], a[href$="/cross-pollination/"] {
+    background-color: var(--tan);
+    color: #111 !important;
+    padding: 0.1rem 0.45rem;
+    border-radius: 2px;
+    text-decoration: none !important;
+  }
 }
 
 // ─── Content meta ─────────────────────────────────────────────────────────────
+
+// Section index pages: show date only, no reading time
+[data-slug="notes/index"] .content-meta span,
+[data-slug="questions/index"] .content-meta span,
+[data-slug="cross-pollination/index"] .content-meta span { display: none; }
+
+[data-slug="notes/index"] .content-meta time::before,
+[data-slug="questions/index"] .content-meta time::before,
+[data-slug="cross-pollination/index"] .content-meta time::before {
+  content: "last updated on ";
+}
 
 .content-meta {
   font-size: 0.78rem;

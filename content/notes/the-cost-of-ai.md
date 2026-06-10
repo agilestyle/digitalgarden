@@ -17,4 +17,4 @@ What does a responsible AI practice look like when you account for the full supp
 
 ---
 
-*Related: [[ai-and-the-green-web]] · [[responsible-for-whom]] · [[what-does-design-actually-change]]*
+*Related: [[ai-and-the-green-web|AI and the green web]] · [[responsible-for-whom|Responsible for whom?]] · [[what-does-design-actually-change|What does design actually change?]] · [[what-if-ai-showed-its-carbon-cost|What if AI showed you the bill?]]*

@@ -19,4 +19,4 @@ I don't think we talk about this enough in design education. The pixel is never 
 
 ---
 
-*Related: [[the-cost-of-ai]] · [[low-tech-in-an-ai-world]] · [[what-does-design-actually-change]]*
+*Related: [[the-cost-of-ai|The cost of AI]] · [[low-tech-in-an-ai-world|What does low-tech mean now?]] · [[what-does-design-actually-change|What does design actually change?]]*

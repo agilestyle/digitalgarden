@@ -19,4 +19,4 @@ What changes first: the practice, or the room?
 
 ---
 
-*Related: [[from-principles-to-doing]] · [[the-manifesto-values]] · [[responsible-for-whom]]*
+*Related: [[from-principles-to-doing|From principles to doing]] · [[the-manifesto-values|The manifesto values]] · [[responsible-for-whom|Responsible for whom?]]*

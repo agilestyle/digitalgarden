@@ -17,4 +17,4 @@ This is still a live question for me. I'm not sure what follows from it practica
 
 ---
 
-*Related: [[responsible-for-whom]] · [[from-principles-to-doing]] · [[feminist-ai-superrr]]*
+*Related: [[responsible-for-whom|Responsible for whom?]] · [[from-principles-to-doing|From principles to doing]] · [[feminist-ai-superrr|Feminist AI — what Superrr Lab opened up]]*

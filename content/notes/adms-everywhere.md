@@ -17,4 +17,4 @@ Simone Rebaudengo had this useful provocation: what if instead of asking "is the
 
 ---
 
-*Related: [[what-is-intelligence-anyway]] · [[from-principles-to-doing]] · [[can-transparency-be-enough]]*
+*Related: [[what-is-intelligence-anyway|What is intelligence, anyway?]] · [[from-principles-to-doing|From principles to doing]] · [[can-transparency-be-enough|Can transparency be enough?]]*

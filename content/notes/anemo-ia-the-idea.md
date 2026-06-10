@@ -23,4 +23,4 @@ The project is a small, pragmatic step toward it. Not an argument that AI is bad
 
 ---
 
-*Related: [[the-cost-of-ai]] · [[from-principles-to-doing]] · [[responsible-for-whom]] · [[anemo-ia-building-in-phases]] · [[anemo-ia-measuring-carbon]] · [[two-papers-three-formulas]] · [[if-hardware-gets-better-does-the-question-disappear]]*
+*Related: [[the-cost-of-ai|The cost of AI]] · [[from-principles-to-doing|From principles to doing]] · [[responsible-for-whom|Responsible for whom?]] · [[anemo-ia-building-in-phases|Building in three phases]] · [[anemo-ia-measuring-carbon|From EcoLogits to our own estimator]] · [[two-papers-three-formulas|Two papers, three formulas]] · [[if-hardware-gets-better-does-the-question-disappear|If the hardware gets better...]] · [[what-if-ai-showed-its-carbon-cost|What if AI showed you the bill?]]*

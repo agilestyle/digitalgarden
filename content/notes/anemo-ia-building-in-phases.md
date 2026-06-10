@@ -28,4 +28,4 @@ There's something worth sitting with here: a project about responsible AI use wa
 
 ---
 
-*Related: [[anemo-ia-the-idea]] · [[anemo-ia-measuring-carbon]] · [[what-does-design-actually-change]] · [[from-principles-to-doing]] · [[two-papers-three-formulas]] · [[if-hardware-gets-better-does-the-question-disappear]]*
+*Related: [[anemo-ia-the-idea|Where the idea came from]] · [[anemo-ia-measuring-carbon|From EcoLogits to our own estimator]] · [[what-does-design-actually-change|What does design actually change?]] · [[from-principles-to-doing|From principles to doing]] · [[two-papers-three-formulas|Two papers, three formulas]] · [[if-hardware-gets-better-does-the-question-disappear|If the hardware gets better...]]*

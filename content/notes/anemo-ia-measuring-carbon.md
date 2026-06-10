@@ -51,4 +51,4 @@ All estimates are labelled `~estimated` in the interface. Every CSV export inclu
 
 ---
 
-*Related: [[anemo-ia-the-idea]] · [[anemo-ia-building-in-phases]] · [[the-cost-of-ai]] · [[ai-and-the-green-web]] · [[can-transparency-be-enough]] · [[two-papers-three-formulas]] · [[if-hardware-gets-better-does-the-question-disappear]]*
+*Related: [[anemo-ia-the-idea|Where the idea came from]] · [[anemo-ia-building-in-phases|Building in three phases]] · [[the-cost-of-ai|The cost of AI]] · [[ai-and-the-green-web|AI and the green web]] · [[can-transparency-be-enough|Can transparency be enough?]] · [[two-papers-three-formulas|Two papers, three formulas]] · [[if-hardware-gets-better-does-the-question-disappear|If the hardware gets better...]] · [[what-if-ai-showed-its-carbon-cost|What if AI showed you the bill?]]*

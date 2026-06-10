@@ -1,7 +1,7 @@
 ---
 title: If the hardware gets better, does the question disappear?
 date: 2026-05-04
-tags: [hardware, efficiency, rebound-effect, responsibility, open-question, anemoia]
+tags: [anemoia, hardware, efficiency, rebound-effect, responsibility, open-question]
 ---
 
 One of the things I built into AnemoIA was the idea that tracking environmental impact is a first step toward agency — not a solution, just a way of making visible what is usually hidden. But writing the spec I kept bumping into a footnote I couldn't ignore: STT-MRAM memory, already shipping in consumer devices, has demonstrated 97% power reductions over conventional CMOS memory. Endoh and Fukami published it in *Nature* in 2022. That's not a roadmap item. That's now.
@@ -18,4 +18,4 @@ I don't know. But I think it matters whether we're building awareness tools for 
 
 ---
 
-*Related: [[the-cost-of-ai]] · [[low-tech-in-an-ai-world]] · [[what-does-design-actually-change]] · [[anemo-ia-the-idea]] · [[anemo-ia-building-in-phases]] · [[anemo-ia-measuring-carbon]] · [[two-papers-three-formulas]]*
+*Related: [[the-cost-of-ai|The cost of AI]] · [[low-tech-in-an-ai-world|What does low-tech mean now?]] · [[what-does-design-actually-change|What does design actually change?]] · [[anemo-ia-the-idea|Where the idea came from]] · [[anemo-ia-building-in-phases|Building in three phases]] · [[anemo-ia-measuring-carbon|From EcoLogits to our own estimator]] · [[two-papers-three-formulas|Two papers, three formulas]]*

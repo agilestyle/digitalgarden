@@ -19,4 +19,4 @@ These values aren't a solution. They're more like a set of questions I'm going t
 
 ---
 
-*Related: [[responsible-for-whom]] · [[from-principles-to-doing]] · [[what-does-design-actually-change]]*
+*Related: [[responsible-for-whom|Responsible for whom?]] · [[from-principles-to-doing|From principles to doing]] · [[what-does-design-actually-change|What does design actually change?]]*

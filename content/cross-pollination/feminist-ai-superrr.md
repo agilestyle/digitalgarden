@@ -21,4 +21,4 @@ I'm also struck by the attention to care in feminist tech frameworks. Care as a 
 
 ---
 
-*Related: [[responsible-for-whom]] · [[who-defines-responsible]] · [[the-manifesto-values]]*
+*Related: [[responsible-for-whom|Responsible for whom?]] · [[who-defines-responsible|Who gets to define "responsible"?]] · [[the-manifesto-values|The manifesto values]]*

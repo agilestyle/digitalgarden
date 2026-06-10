@@ -45,4 +45,4 @@ What's missing isn't the capability. It's the decision.
 
 ---
 
-*Related: [[anemo-ia-the-idea]] · [[anemo-ia-measuring-carbon]] · [[anemo-ia-image-carbon]] · [[the-cost-of-ai]] · [[can-transparency-be-enough]] · [[if-hardware-gets-better-does-the-question-disappear]] · [[responsible-for-whom]]*
+*Related: [[anemo-ia-the-idea|Where the idea came from]] · [[anemo-ia-measuring-carbon|From EcoLogits to our own estimator]] · [[anemo-ia-image-carbon|Image generation carbon]] · [[the-cost-of-ai|The cost of AI]] · [[can-transparency-be-enough|Can transparency be enough?]] · [[if-hardware-gets-better-does-the-question-disappear|If the hardware gets better...]] · [[responsible-for-whom|Responsible for whom?]]*

@@ -17,4 +17,4 @@ So when a company says their model is "intelligent," I now hear a claim being ma
 
 ---
 
-*Related: [[adms-everywhere]] · [[responsible-for-whom]] · [[who-defines-responsible]]*
+*Related: [[adms-everywhere|ADMS everywhere]] · [[responsible-for-whom|Responsible for whom?]] · [[who-defines-responsible|Who gets to define "responsible"?]]*

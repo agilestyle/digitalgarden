@@ -19,4 +19,4 @@ The surveillance imagination that produced Clearview AI assumes ambient, persist
 
 ---
 
-*Related: [[clearview-ai]] · [[can-consent-survive-scale]] · [[who-defines-responsible]] · [[responsible-for-whom]]*
+*Related: [[clearview-ai|Clearview AI]] · [[can-consent-survive-scale|Can consent survive scale?]] · [[who-defines-responsible|Who gets to define "responsible"?]] · [[responsible-for-whom|Responsible for whom?]]*

@@ -269,6 +269,34 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
     document.addEventListener('nav', openExternalLinksInNewTab)
   `)
 
+  componentResources.afterDOMLoaded.push(`
+    function updateSectionIndexDate() {
+      const slug = document.body.dataset.slug
+      if (!slug || !slug.match(/^(notes|questions|cross-pollination)\\/index$/)) return
+      const firstListingTime = document.querySelector('.section-ul .meta time')
+      if (!firstListingTime) return
+      const datetime = firstListingTime.getAttribute('datetime')
+      if (!datetime) return
+      const date = new Date(datetime)
+      const formatted = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+      let metaTime = document.querySelector('.content-meta time')
+      if (metaTime) {
+        metaTime.setAttribute('datetime', datetime)
+        metaTime.textContent = formatted
+      } else {
+        const meta = document.querySelector('.content-meta')
+        if (meta) {
+          const time = document.createElement('time')
+          time.setAttribute('datetime', datetime)
+          time.textContent = formatted
+          meta.prepend(time)
+        }
+      }
+    }
+    updateSectionIndexDate()
+    document.addEventListener('nav', updateSectionIndexDate)
+  `)
+
   if (cfg.enableSPA) {
     componentResources.afterDOMLoaded.push(spaRouterScript)
   } else {

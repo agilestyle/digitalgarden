@@ -1,6 +1,6 @@
 ---
 title: AnemoIA — why image generation carbon is its own problem
-date: 2026-05-12
+date: 2026-06-03
 tags: [anemoia, carbon, environmental-impact, term-3]
 ---
 
@@ -31,4 +31,4 @@ That's the number. What stays with me is what it took to get there: one peer-rev
 
 ---
 
-*Related: [[anemo-ia-the-idea]] · [[anemo-ia-measuring-carbon]] · [[anemo-ia-building-in-phases]] · [[two-papers-three-formulas]] · [[the-cost-of-ai]] · [[if-hardware-gets-better-does-the-question-disappear]]*
+*Related: [[anemo-ia-the-idea|Where the idea came from]] · [[anemo-ia-measuring-carbon|From EcoLogits to our own estimator]] · [[anemo-ia-building-in-phases|Building in three phases]] · [[two-papers-three-formulas|Two papers, three formulas]] · [[the-cost-of-ai|The cost of AI]] · [[if-hardware-gets-better-does-the-question-disappear|If the hardware gets better...]] · [[what-if-ai-showed-its-carbon-cost|What if AI showed you the bill?]]*

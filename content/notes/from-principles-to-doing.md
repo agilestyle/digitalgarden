@@ -19,4 +19,4 @@ This is the gap I'm most interested in: between what the field says it values an
 
 ---
 
-*Related: [[adms-everywhere]] · [[responsible-for-whom]] · [[can-transparency-be-enough]] · [[who-defines-responsible]]*
+*Related: [[adms-everywhere|ADMS everywhere]] · [[responsible-for-whom|Responsible for whom?]] · [[can-transparency-be-enough|Can transparency be enough?]] · [[who-defines-responsible|Who gets to define "responsible"?]]*

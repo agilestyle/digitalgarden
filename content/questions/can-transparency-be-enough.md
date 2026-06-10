@@ -17,4 +17,4 @@ I don't have an answer here. But I think the question is: what would transparenc
 
 ---
 
-*Related: [[from-principles-to-doing]] · [[adms-everywhere]] · [[who-defines-responsible]]*
+*Related: [[from-principles-to-doing|From principles to doing]] · [[adms-everywhere|ADMS everywhere]] · [[who-defines-responsible|Who gets to define "responsible"?]]*

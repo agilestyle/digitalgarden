@@ -17,4 +17,4 @@ The accountability gap is structural. Law enforcement agencies that use Clearvie
 
 ---
 
-*Related: [[adms-everywhere]] · [[responsible-for-whom]] · [[face-as-identity]] · [[can-consent-survive-scale]]*
+*Related: [[adms-everywhere|ADMS everywhere]] · [[responsible-for-whom|Responsible for whom?]] · [[face-as-identity|A face isn't just data]] · [[can-consent-survive-scale|Can consent survive scale?]]*

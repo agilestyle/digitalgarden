@@ -17,4 +17,4 @@ I don't think "responsible AI" is a bad goal. I think it's an underspecified one
 
 ---
 
-*Related: [[what-is-intelligence-anyway]] · [[from-principles-to-doing]] · [[who-defines-responsible]] · [[feminist-ai-superrr]]*
+*Related: [[what-is-intelligence-anyway|What is intelligence, anyway?]] · [[from-principles-to-doing|From principles to doing]] · [[who-defines-responsible|Who gets to define "responsible"?]] · [[feminist-ai-superrr|Feminist AI — what Superrr Lab opened up]]*
