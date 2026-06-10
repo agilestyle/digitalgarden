@@ -277,7 +277,7 @@ blockquote {
 
 // ─── Related links (paragraph after hr) ──────────────────────────────────────
 
-hr + p {
+hr:last-of-type + p {
   font-size: 0.78rem;
   color: var(--gray);
 
