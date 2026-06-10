@@ -678,20 +678,26 @@ footer {
 // ─── Tag/folder list pages ────────────────────────────────────────────────────
 
 .section {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "meta desc" ". tags";
+  column-gap: 1rem;
   align-items: baseline;
-  gap: 0 1rem;
 
-  .meta { flex: 0 0 auto; }
+  .meta {
+    grid-area: meta;
+    white-space: nowrap;
+  }
 
   .desc {
-    flex: 1 1 auto;
+    grid-area: desc;
+    min-width: 0;
     h3 { margin: 0; }
   }
 
   > .tags {
-    flex: 0 0 100%;
+    grid-area: tags;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
