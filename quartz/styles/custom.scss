@@ -712,6 +712,11 @@ footer {
   .meta {
     grid-area: meta;
     white-space: nowrap;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--gray);
   }
 
   .desc {
