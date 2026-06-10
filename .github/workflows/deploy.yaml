@@ -43,7 +43,6 @@ jobs:
         with:
           path: .quartz/plugins
           key: ${{ runner.os }}-plugins-${{ hashFiles('quartz.lock.json') }}
-          restore-keys: ${{ runner.os }}-plugins-
 
       - run: npm ci
 
