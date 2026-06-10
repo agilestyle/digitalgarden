@@ -1,7 +1,7 @@
 ---
 title: If the hardware gets better, does the question disappear?
 date: 2026-05-04
-tags: [hardware, efficiency, rebound-effect, responsibility, open-question]
+tags: [hardware, efficiency, rebound-effect, responsibility, open-question, anemoia]
 ---
 
 One of the things I built into AnemoIA was the idea that tracking environmental impact is a first step toward agency — not a solution, just a way of making visible what is usually hidden. But writing the spec I kept bumping into a footnote I couldn't ignore: STT-MRAM memory, already shipping in consumer devices, has demonstrated 97% power reductions over conventional CMOS memory. Endoh and Fukami published it in *Nature* in 2022. That's not a roadmap item. That's now.

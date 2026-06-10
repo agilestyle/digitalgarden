@@ -1,7 +1,7 @@
 ---
 title: AnemoIA — building in three phases
 date: 2026-04-22
-tags: [anemo-ia, final-project, process, ai-assisted-development, term-3]
+tags: [anemoia, term-3]
 ---
 
 

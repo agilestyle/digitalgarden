@@ -1,7 +1,7 @@
 ---
 title: AnemoIA — why image generation carbon is its own problem
 date: 2026-05-12
-tags: [anemo-ia, final-project, carbon, environmental-impact, term-3]
+tags: [anemoia, carbon, environmental-impact, term-3]
 ---
 
 

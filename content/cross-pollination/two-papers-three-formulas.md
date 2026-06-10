@@ -1,7 +1,7 @@
 ---
 title: Two papers, three formulas
 date: 2026-05-06
-tags: [environment, AI, carbon, ecologits, TPU, hardware, anemo-ia, cross-pollination]
+tags: [environment, carbon, hardware, anemoia, cross-pollination]
 ---
 
 When I started building the environmental estimation layer for AnemoIA, the obvious starting point was [EcoLogits](https://ecologits.ai) — an open-source tool that wraps AI API calls and returns a carbon estimate alongside every response. It uses a parametric model of NVIDIA H100 GPU clusters, combined with [Boavizta's](https://boavizta.org) embodied-carbon database, to calculate the energy, water, and manufacturing cost of each inference. Clean methodology, well-documented, MIT-licensed. I wired it in.
