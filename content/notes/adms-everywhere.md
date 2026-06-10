@@ -9,7 +9,7 @@ Automated Decision-Making Systems. Before this program I didn't have a name for 
 
 Which content I see. Whether my CV gets past the screening round. What credit I'm offered. What my insurance costs. These are all decisions — real decisions with real consequences — that are increasingly being made by systems nobody fully audits, explains, or takes responsibility for.
 
-What struck me in module [[Decoding AI Systems]] wasn't the technology itself. It was the organisational logic around it. Companies and institutions adopt ADMS not necessarily because they're better at making decisions, but because they distribute accountability. A bad decision made by an algorithm is somehow less someone's fault than a bad decision made by a person.
+What struck me in module Decoding AI Systems wasn't the technology itself. It was the organisational logic around it. Companies and institutions adopt ADMS not necessarily because they're better at making decisions, but because they distribute accountability. A bad decision made by an algorithm is somehow less someone's fault than a bad decision made by a person.
 
 That's a design problem. A governance problem. Maybe a language problem.
 

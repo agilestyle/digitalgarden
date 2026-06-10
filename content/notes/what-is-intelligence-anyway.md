@@ -5,7 +5,7 @@ tags: [ai, intelligence, decoding-ai, term-1]
 ---
 
 
-One of the first things that happened in [[Decoding AI Systems]] was that someone asked us to define intelligence. Not artificial intelligence — just intelligence. And nobody could.
+One of the first things that happened in Decoding AI Systems was that someone asked us to define intelligence. Not artificial intelligence — just intelligence. And nobody could.
 
 That moment stuck with me. We spend so much time debating whether AI is "real" intelligence, whether machines can "truly" understand, whether LLMs are just autocomplete or something more — and underneath all of it is a word we haven't agreed on.
 

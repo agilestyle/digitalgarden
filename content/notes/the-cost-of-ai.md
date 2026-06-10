@@ -5,7 +5,7 @@ tags: [environment, sustainability, term-1, planetary, ai-systems]
 ---
 
 
-I came into this program focused on ethics in the social sense — bias, fairness, accountability. The module on [[AI Systems Society and Planet]] shifted my attention to something I'd kept on the periphery: the material cost of all of this.
+I came into this program focused on ethics in the social sense — bias, fairness, accountability. The module on AI Systems Society and Planet shifted my attention to something I'd kept on the periphery: the material cost of all of this.
 
 Data centres use water. Training a large model produces carbon. The minerals in the hardware come from somewhere, extracted by someone. The cloud is not the cloud — it's infrastructure built on land, cooled by rivers, powered by grids.
 
