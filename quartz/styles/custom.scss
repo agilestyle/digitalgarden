@@ -437,6 +437,7 @@ a.internal.tag-link {
     &.active {
       color: var(--orange);
       font-weight: 600;
+      background-color: color-mix(in srgb, var(--yellow) 55%, transparent);
     }
   }
 }
