@@ -678,26 +678,9 @@ footer {
 // ─── Tag/folder list pages ────────────────────────────────────────────────────
 
 .section {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "meta desc" ". tags";
-  column-gap: 1rem;
-  align-items: baseline;
-
-  .meta {
-    grid-area: meta;
-    white-space: nowrap;
-  }
-
-  .desc {
-    grid-area: desc;
-    min-width: 0;
-    h3 { margin: 0; }
-  }
+  h3 { margin: 0; }
 
   > .tags {
-    grid-area: tags;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -714,6 +697,30 @@ footer {
 
       &::before, &::marker { display: none; content: none; }
     }
+  }
+}
+
+// Grid layout only for main list pages (notes/questions/cross-pollination index)
+.section-ul .section {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "meta desc" ". tags";
+  column-gap: 1rem;
+  align-items: baseline;
+
+  .meta {
+    grid-area: meta;
+    white-space: nowrap;
+  }
+
+  .desc {
+    grid-area: desc;
+    min-width: 0;
+  }
+
+  > .tags {
+    grid-area: tags;
   }
 
   @media #{$mobile} {
