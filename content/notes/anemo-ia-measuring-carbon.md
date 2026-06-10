@@ -1,7 +1,7 @@
 ---
 title: AnemoIA — from EcoLogits to our own estimator
 date: 2026-05-08
-tags: [anemoia, carbon, environmental-impact, term-3]
+tags: [anemoia, carbon, environmental-impact]
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: AnemoIA — building in three phases
 date: 2026-04-22
-tags: [anemoia, term-3]
+tags: [anemoia]
 ---
 
 

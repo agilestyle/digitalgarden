@@ -1,7 +1,7 @@
 ---
 title: Can consent survive scale?
 date: 2026-03-03
-tags: [consent, governance, surveillance, open-question, clearview, term-3]
+tags: [consent, governance, surveillance, open-question, clearview]
 ---
 
 

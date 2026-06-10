@@ -1,7 +1,7 @@
 ---
 title: Responsible for whom?
 date: 2026-01-15
-tags: [responsible-ai, power, ethics, governance, term-2]
+tags: [responsible-ai, power, ethics, governance]
 ---
 
 

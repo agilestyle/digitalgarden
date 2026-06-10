@@ -1,7 +1,7 @@
 ---
 title: What is intelligence, anyway?
 date: 2025-10-21
-tags: [ai, intelligence, decoding-ai, term-1]
+tags: [ai, intelligence, decoding-ai]
 ---
 
 

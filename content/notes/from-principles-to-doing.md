@@ -1,7 +1,7 @@
 ---
 title: From principles to doing
 date: 2026-02-24
-tags: [responsible-ai, implementation, term-2, principles, practice]
+tags: [responsible-ai, implementation, principles, practice]
 ---
 
 

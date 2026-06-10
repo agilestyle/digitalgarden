@@ -1,7 +1,7 @@
 ---
 title: Clearview AI — a system that wasn't built for you
 date: 2026-01-22
-tags: [surveillance, biometrics, adms, power, governance, clearview, term-3]
+tags: [surveillance, biometrics, adms, power, governance, clearview]
 ---
 
 
